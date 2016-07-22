@@ -48,7 +48,7 @@ def fetch_repo(url):
 Return the auth token located in ~/.github
 """
 def auth_token():
-    token = os.path.expanduser('~/.github')
+    token = os.path.expanduser('~/.github-access-token')
     print "Reading %s" % token
 
     if os.path.exists(token):
